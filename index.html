@@ -3,44 +3,63 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Cut It Yourself — קורס תספורת לגברים</title>
+<title>CutIt Yourself — תפסיק להיות תלוי בספר שלך</title>
+<meta name="description" content="ליווי אישי שילמד אותך להסתפר לבד — נקי, מדויק, בלי תורים ובלי לבזבז אלפי שקלים בשנה."/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;direction:rtl;}
 body{font-family:'DM Sans',sans-serif;background:#111008;}
 .page{max-width:560px;margin:0 auto;padding:0 1.5rem 4rem;background:#111008;}
-.topbar{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;border-bottom:1px solid #2A2820;margin-bottom:0;}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 0;border-bottom:1px solid #2A2820;}
 .logo-area{display:flex;align-items:center;gap:10px;}
 .logo-img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid #3A3020;}
 .logo-text{font-family:'DM Serif Display',serif;font-size:0.95rem;color:#F0EAD6;}
 .hero{text-align:center;padding:3rem 0 2.5rem;}
 .logo-big{width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:2rem;border:2px solid #C4621A;}
-.hero h1{font-family:'DM Serif Display',serif;font-size:2.8rem;color:#F0EAD6;line-height:1.15;margin-bottom:0.6rem;letter-spacing:-0.5px;}
+.hero h1{font-family:'DM Serif Display',serif;font-size:2.6rem;color:#F0EAD6;line-height:1.15;margin-bottom:0.6rem;letter-spacing:-0.5px;}
 .hero h1 em{font-style:italic;color:#C4621A;}
 .hero p{font-size:0.95rem;color:#A09070;line-height:1.75;max-width:400px;margin:0 auto 2rem;}
 .cta-btn{display:inline-block;background:#2D8A4E;color:#fff;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;padding:0.9rem 2.8rem;border-radius:3px;border:none;cursor:pointer;letter-spacing:0.2px;transition:opacity 0.15s;text-decoration:none;}
 .cta-btn:hover{opacity:0.88;}
 .price-note{font-size:11px;color:#5C5040;margin-top:0.7rem;}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2A2820;border:1px solid #2A2820;border-radius:3px;overflow:hidden;margin:2.5rem 0;}
+.pain-block{background:#1A1810;border:1px solid #2A2820;border-radius:3px;padding:1.5rem;margin:2rem 0;}
+.pain-block h2{font-family:'DM Serif Display',serif;font-size:1.3rem;color:#F0EAD6;margin-bottom:1rem;}
+.pain-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:0.7rem;}
+.pain-item:last-child{margin-bottom:0;}
+.pain-x{color:#C4621A;font-size:14px;font-weight:500;margin-top:1px;}
+.pain-item span{font-size:13px;color:#A09070;line-height:1.6;}
+.pain-hook{font-size:14px;color:#C4621A;font-weight:500;margin-top:1.2rem;border-top:1px solid #2A2820;padding-top:1rem;}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2A2820;border:1px solid #2A2820;border-radius:3px;overflow:hidden;margin:2rem 0;}
 .stat{background:#1A1810;padding:1.2rem 1rem;text-align:center;}
-.stat strong{display:block;font-size:1.5rem;font-weight:500;color:#F0EAD6;}
+.stat strong{display:block;font-size:1.4rem;font-weight:500;color:#F0EAD6;}
 .stat span{font-size:11px;color:#6A6050;}
 .section-label{font-size:10px;font-weight:500;letter-spacing:2px;color:#C4621A;text-transform:uppercase;margin-bottom:1rem;}
-.modules{display:flex;flex-direction:column;}
-.mod{display:flex;align-items:flex-start;gap:1rem;padding:1rem 0;border-bottom:1px solid #2A2820;}
-.mod:first-child{border-top:1px solid #2A2820;}
-.mod-num{font-size:11px;color:#C4621A;min-width:22px;padding-top:2px;font-weight:500;}
-.mod-body strong{display:block;font-size:14px;font-weight:500;color:#F0EAD6;margin-bottom:2px;}
-.mod-body span{font-size:12px;color:#7A7060;}
+.benefits{display:flex;flex-direction:column;}
+.benefit{display:flex;align-items:flex-start;gap:1rem;padding:1rem 0;border-bottom:1px solid #2A2820;}
+.benefit:first-child{border-top:1px solid #2A2820;}
+.benefit-check{color:#2D8A4E;font-size:14px;font-weight:500;margin-top:1px;min-width:16px;}
+.benefit-body strong{display:block;font-size:14px;font-weight:500;color:#F0EAD6;margin-bottom:2px;}
+.benefit-body span{font-size:12px;color:#7A7060;}
+.offers{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:1.5rem 0;}
+.offer{background:#1A1810;border:1px solid #2A2820;border-radius:3px;padding:1.2rem;}
+.offer.featured{border-color:#C4621A;}
+.offer-badge{font-size:10px;color:#C4621A;font-weight:500;letter-spacing:1px;text-transform:uppercase;margin-bottom:0.5rem;display:block;}
+.offer h3{font-family:'DM Serif Display',serif;font-size:1rem;color:#F0EAD6;margin-bottom:0.5rem;}
+.offer p{font-size:12px;color:#7A7060;line-height:1.6;}
 .divider{border:none;border-top:1px solid #2A2820;margin:2rem 0;}
-.testimonial{padding:1.2rem 0;border-bottom:1px solid #1E1C14;}
-.testimonial:last-of-type{border-bottom:none;}
-.testimonial p{font-size:14px;color:#A09070;line-height:1.7;font-style:italic;margin-bottom:0.4rem;}
-.testimonial .name{font-size:11px;color:#5C5040;}
-.bottom{text-align:center;padding:2rem 0 0;}
+.bottom{text-align:center;padding:1rem 0 0;}
 .bottom h2{font-family:'DM Serif Display',serif;font-size:1.6rem;color:#F0EAD6;margin-bottom:0.4rem;}
-.bottom p{font-size:13px;color:#7A7060;margin-bottom:1.4rem;}
-.trust{display:flex;justify-content:center;gap:1.5rem;margin-top:1.2rem;flex-wrap:wrap;}
+.bottom p{font-size:13px;color:#7A7060;margin-bottom:1.4rem;line-height:1.7;}
+.form-block{background:#1A1810;border:1px solid #2A2820;border-radius:3px;padding:1.5rem;margin-top:1.5rem;}
+.form-block label{display:block;font-size:12px;color:#8B7355;margin-bottom:5px;margin-top:12px;}
+.form-block label:first-of-type{margin-top:0;}
+.form-block input{width:100%;background:#111008;border:1px solid #2A2820;border-radius:2px;padding:0.65rem 0.8rem;font-size:14px;color:#F0EAD6;font-family:'DM Sans',sans-serif;outline:none;}
+.form-block input:focus{border-color:#C4621A;}
+.form-block input::placeholder{color:#3A3820;}
+.submit-btn{width:100%;margin-top:1.2rem;background:#2D8A4E;color:#fff;font-family:'DM Sans',sans-serif;font-size:1rem;font-weight:500;padding:0.85rem;border-radius:3px;border:none;cursor:pointer;transition:opacity 0.15s;}
+.submit-btn:hover{opacity:0.88;}
+.form-note{font-size:11px;color:#5C5040;text-align:center;margin-top:0.6rem;}
+.trust{display:flex;justify-content:center;gap:1.5rem;margin-top:1.5rem;flex-wrap:wrap;}
 .trust-item{font-size:11px;color:#5C5040;display:flex;align-items:center;gap:5px;}
 .trust-dot{width:5px;height:5px;border-radius:50%;background:#2D8A4E;display:inline-block;}
 </style>
@@ -50,44 +69,85 @@ body{font-family:'DM Sans',sans-serif;background:#111008;}
   <div class="topbar">
     <div class="logo-area">
       <img class="logo-img" src="logo.png" alt="לוגו"/>
-      <div class="logo-text">Cut It Yourself</div>
+      <div class="logo-text">CutIt Yourself</div>
     </div>
     <a href="faq.html" style="font-size:12px;color:#8B7355;text-decoration:none;">שאלות נפוצות</a>
   </div>
+
   <div class="hero">
     <img class="logo-big" src="logo.png" alt="לוגו"/>
-    <h1>תגזוז את עצמך<br><em>כמו מקצוען</em></h1>
-    <p>קורס וידאו מלא לתספורת גברים בבית — בלי ניסיון, בלי מספרה, בלי לבזבז כסף כל חודש.</p>
-    <a class="cta-btn" href="#">לרכישת הקורס ←</a>
-    <p class="price-note">גישה מיידית · תשלום חד פעמי</p>
+    <h1>תתחיל להסתפר לבד —<br><em>כמו מקצוען</em></h1>
+    <p>ליווי אישי שילמד אותך לעשות לעצמך תספורת נקייה ומדויקת, שלב אחרי שלב — בלי ספר, בלי תורים, ובלי לבזבז אלפי שקלים בשנה.</p>
+    <a class="cta-btn" href="#lead">השאר פרטים לשיחת ייעוץ ←</a>
+    <p class="price-note">חינם · ללא התחייבות</p>
   </div>
+
+  <div class="pain-block">
+    <h2>כמה כסף כבר בזבזת על תספורות?</h2>
+    <div class="pain-item"><span class="pain-x">✕</span><span>70₪ כל שבועיים = <strong style="color:#F0EAD6;">~3,000₪ בשנה</strong> שנעלמים</span></div>
+    <div class="pain-item"><span class="pain-x">✕</span><span>תורים, המתנה — ולפעמים יוצאים לא מרוצים</span></div>
+    <div class="pain-item"><span class="pain-x">✕</span><span>תלות מוחלטת במישהו אחר שיחליט איך אתה נראה</span></div>
+    <p class="pain-hook">הגיע הזמן להפסיק להיות תלוי בספר שלך ←</p>
+  </div>
+
   <div class="stats">
-    <div class="stat"><strong>8</strong><span>שיעורים</span></div>
-    <div class="stat"><strong>75+</strong><span>דקות תוכן</span></div>
-    <div class="stat"><strong>∞</strong><span>גישה לצמיתות</span></div>
+    <div class="stat"><strong>3,000₪</strong><span>חיסכון בשנה</span></div>
+    <div class="stat"><strong>24/7</strong><span>זמין תמיד</span></div>
+    <div class="stat"><strong>100%</strong><span>שליטה עצמית</span></div>
   </div>
-  <div class="section-label">מה תלמד</div>
-  <div class="modules">
-    <div class="mod"><span class="mod-num">01</span><div class="mod-body"><strong>הכלים הנכונים</strong><span>מה לקנות ואיפה — בלי להוציא הרבה</span></div></div>
-    <div class="mod"><span class="mod-num">02</span><div class="mod-body"><strong>חיתוך בסיסי לגברים</strong><span>גזרה ישרה, שכבות ופייד בסיסי</span></div></div>
-    <div class="mod"><span class="mod-num">03</span><div class="mod-body"><strong>עבודה עם מכונה</strong><span>מספרים, גרדיאנט ואיך לא לקלקל</span></div></div>
-    <div class="mod"><span class="mod-num">04</span><div class="mod-body"><strong>גימור מושלם</strong><span>עורף, פסים ופרטים שעושים את ההבדל</span></div></div>
-    <div class="mod"><span class="mod-num">05</span><div class="mod-body"><strong>שיעור חי — כל התהליך</strong><span>מהתחלה לסוף על מודל אמיתי</span></div></div>
+
+  <div class="section-label">מה תקבל בליווי</div>
+  <div class="benefits">
+    <div class="benefit"><span class="benefit-check">✓</span><div class="benefit-body"><strong>סרטוני הדרכה ברורים</strong><span>מול מראה, שלב אחרי שלב — גם בלי ניסיון קודם</span></div></div>
+    <div class="benefit"><span class="benefit-check">✓</span><div class="benefit-body"><strong>תספורות טרנדיות</strong><span>פייד, גרדיאנט, גימור מקצועי</span></div></div>
+    <div class="benefit"><span class="benefit-check">✓</span><div class="benefit-body"><strong>ליווי אישי בוואטסאפ</strong><span>שאלות, עזרה ותמיכה בזמן אמת</span></div></div>
+    <div class="benefit"><span class="benefit-check">✓</span><div class="benefit-body"><strong>פידבק על כל תספורת</strong><span>שיפור מתמיד עד שזה מושלם</span></div></div>
+    <div class="benefit"><span class="benefit-check">✓</span><div class="benefit-body"><strong>מיומנות לכל החיים</strong><span>לא עוד תלות — אתה שולט בתספורת שלך</span></div></div>
   </div>
+
   <div class="divider"></div>
-  <div class="testimonial"><p>״לא האמנתי שאני יכול לעשות את זה לבד. אחרי השיעור הראשון כבר גזזתי את עצמי ויצא מדהים״</p><div class="name">— יונתן מ.</div></div>
-  <div class="testimonial"><p>״חסכתי כסף על מספרה כל חודש. הכי שווה קורס שקניתי.״</p><div class="name">— אור ש.</div></div>
-  <div class="divider"></div>
-  <div class="bottom">
-    <h2>מוכן להתחיל?</h2>
-    <p>הצטרף עכשיו ותגזוז את עצמך כבר השבוע</p>
-    <a class="cta-btn" href="#">הצטרף עכשיו ←</a>
-    <div class="trust">
-      <span class="trust-item"><span class="trust-dot"></span>החזר כספי תוך 7 ימים</span>
-      <span class="trust-item"><span class="trust-dot"></span>גישה לצמיתות</span>
-      <span class="trust-item"><span class="trust-dot"></span>תמיכה בוואטסאפ</span>
+  <div class="section-label">2 אפשרויות ליווי</div>
+  <div class="offers">
+    <div class="offer">
+      <span class="offer-badge">בסיסי</span>
+      <h3>ליווי אישי</h3>
+      <p>סרטונים + ליווי בוואטסאפ + פידבק על התספורות שלך</p>
+    </div>
+    <div class="offer featured">
+      <span class="offer-badge">מומלץ ✦</span>
+      <h3>ליווי + ציוד</h3>
+      <p>כל מה שבליווי + ערכת ציוד מותאמת אישית לסוג השיער שלך</p>
     </div>
   </div>
+
+  <div class="divider"></div>
+  <div class="bottom">
+    <h2>רוצה לדעת אם זה מתאים לך?</h2>
+    <p>השאר פרטים ונחזור אליך לשיחה קצרה — בלי לחץ, בלי התחייבות.</p>
+  </div>
+  <div class="form-block" id="lead">
+    <label>שם פרטי</label>
+    <input type="text" placeholder="איך קוראים לך?"/>
+    <label>מספר וואטסאפ</label>
+    <input type="tel" placeholder="05X-XXXXXXX"/>
+    <button class="submit-btn" onclick="handleSubmit()">שלח — נחזור אליך תוך 24 שעות ←</button>
+    <p class="form-note">פרטיות מלאה · לא ספאם</p>
+  </div>
+  <div class="trust">
+    <span class="trust-item"><span class="trust-dot"></span>בלי ניסיון קודם</span>
+    <span class="trust-item"><span class="trust-dot"></span>גברים 16–26</span>
+    <span class="trust-item"><span class="trust-dot"></span>ליווי אישי</span>
+  </div>
 </div>
+<script>
+function handleSubmit(){
+  var inputs=document.querySelectorAll('.form-block input');
+  var name=inputs[0].value.trim();
+  var phone=inputs[1].value.trim();
+  if(!name||!phone){alert('נא למלא שם ומספר וואטסאפ');return;}
+  var msg='שלום! קוראים לי '+name+' ואני מעוניין לשמוע על הליווי של CutIt Yourself.';
+  window.open('https://wa.me/972XXXXXXXXX?text='+encodeURIComponent(msg),'_blank');
+}
+</script>
 </body>
 </html>
